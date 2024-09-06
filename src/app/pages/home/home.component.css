@@ -1,42 +1,86 @@
 .chat-container {
-    width: 100%;
+    width: 92%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 20px; /* Space inside the chat container */
-    background: url('../../../assets/bg-2.jpg') no-repeat center center fixed; /* Background image */
-    background-size: cover; /* Ensure the image covers the container */
+    padding: 40px;
+    padding-top: 20px;
+    background: url('../../../assets/bg-3.jpg') no-repeat center center fixed;
+    background-size: cover;
     overflow-y: auto;
     scroll-behavior: smooth;
   }
   
   .message {
-    margin-bottom: 20px; /* Space between messages */
-    padding: 15px; /* Padding inside messages */
-    border-radius: 12px; /* Rounded corners */
-    max-width: 80%; /* Width of the message bubbles */
-    position: relative;
+    display: flex;
+    align-items: center; /* Center vertically */
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    max-width: 80%;
+    position: relative; /* Required for absolute positioning of the profile image */
     animation: fadeInUp 0.5s ease-in-out;
-    font-size: 18px; /* Font size of the message text */
-    line-height: 1.4; /* Line height for readability */
+    font-size: 28px;
+    line-height: 1.4;
   }
   
   .message.sent {
     background: #3f51b5;
     color: white;
-    align-self: flex-end;
+    align-self: flex-end; /* Aligns the message to the end (right) */
     border-bottom-right-radius: 0;
+    margin-right: 25px;
+    padding-left: 60px; /* Space for the profile image and padding */
+    flex-direction: row-reverse; /* Profile image on the right, message on the left */
   }
   
   .message.received {
     background: #e0e0e0;
     color: black;
-    align-self: flex-start;
+    align-self: flex-start; /* Aligns the message to the start (left) */
     border-bottom-left-radius: 0;
+    margin-left: 25px;
+    padding-right: 60px; /* Space for the profile image and padding */
+    flex-direction: row; /* Profile image on the left, message on the right */
   }
   
-
+  .message-content {
+    display: flex;
+    align-items: center; /* Center profile image and message text vertically */
+    width: 100%; /* Ensure the content fills the message container */
+  }
+  
+  .profile {
+    position: absolute; /* Position profile image absolutely within message container */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust vertical centering */
+    z-index: 1; /* Ensure the image is above other content */
+  }
+  
+  .message.sent .profile {
+    right: -65px; /* Position profile image outside to the right for sent messages, with padding */
+  }
+  
+  .message.received .profile {
+    left: -65px; /* Position profile image outside to the left for received messages, with padding */
+  }
+  
+  .profile img {
+    width: 50px; /* Size of the profile picture */
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 50%; /* Circular profile picture */
+    object-fit: cover; /* Ensure the image covers the circle */
+    padding: 8px; /* Padding around the profile image */
+  }
+  
+  .message-text {
+    display: flex;
+    align-items: center; /* Center the text vertically */
+    margin: 0; /* Reset any default margin */
+    font-size: 28px;
+  }
   
   @keyframes fadeInUp {
     from {
