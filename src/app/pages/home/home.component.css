@@ -1,0 +1,51 @@
+.chat-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px; /* Space inside the chat container */
+    background: url('../../../assets/bg-2.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Ensure the image covers the container */
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .message {
+    margin-bottom: 20px; /* Space between messages */
+    padding: 15px; /* Padding inside messages */
+    border-radius: 12px; /* Rounded corners */
+    max-width: 80%; /* Width of the message bubbles */
+    position: relative;
+    animation: fadeInUp 0.5s ease-in-out;
+    font-size: 18px; /* Font size of the message text */
+    line-height: 1.4; /* Line height for readability */
+  }
+  
+  .message.sent {
+    background: #3f51b5;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 0;
+  }
+  
+  .message.received {
+    background: #e0e0e0;
+    color: black;
+    align-self: flex-start;
+    border-bottom-left-radius: 0;
+  }
+  
+
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
