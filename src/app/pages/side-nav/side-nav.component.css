@@ -1,37 +1,80 @@
 .sidenav-container {
-    height: 100%;
-  }
+  height: 100%;
   
-  .sidenav {
-    width: 250px;
-    background: #f4f4f4;
-  }
-  
-  mat-toolbar {
-    background: #3f51b5;
-    color: white;
-  }
-  
-  mat-nav-list a {
-    display: flex;
-    align-items: center;
-  }
-  
-  mat-icon {
-    margin-right: 10px;
-  }
-  
-  .active {
-    font-weight: bold;
-    color: #3f51b5;
-  }
-  
-  .profile img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
-  
+}
+
+.sidenav {
+  width: 250px;
+  background: #fffbfb;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.language-selector {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 10px 0;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.language-selector button {
+  background-color: #3f51b5;
+  color: white;
+  width: 45%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.language-selector button:hover {
+  background-color: #6775d3;
+}
+
+mat-nav-list a {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  padding-left: 20px;
+  width: calc(100% - 20px);
+  text-align: left;
+}
+
+mat-icon {
+  margin-right: 10px;
+}
+
+.active {
+  font-weight: bold;
+  color: #3f51b5;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: auto;
+  padding: 10px 0;
+  margin-left: 10px;
+}
+
+.social-media a {
+  color: #3f51b5;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: #303f9f;
+}

@@ -14,6 +14,14 @@ import { ContactComponent } from './pages/contact/contact.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { SideNavComponent } from './pages/side-nav/side-nav.component';  
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
+
 
 @NgModule({
   declarations: [
@@ -31,6 +39,14 @@ import { SideNavComponent } from './pages/side-nav/side-nav.component';
     MatIconModule,
     MatListModule,
     MatToolbarModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    }),
     AppRoutingModule  
   ],
   providers: [],
