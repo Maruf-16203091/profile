@@ -1,9 +1,16 @@
 {
-    "HOME": "Home",
-    "ABOUT": "About",
-    "PROJECTS": "Projects",
-    "CONTACT": "Contact",
-    "LANGUAGE_SELECTION": "Select Language",
-    "SOCIAL_MEDIA": "Follow us on social media"
-  }
-  
+  "HOME": "Home",
+  "ABOUT": "About",
+  "PROJECTS": "Projects",
+  "CONTACT": "Contact",
+  "LANGUAGE_SELECTION": "Select Language",
+  "SOCIAL_MEDIA": "Follow us on social media",
+  "MESSAGE_1": "Hi there!",
+  "MESSAGE_2": "Hello! How are you?",
+  "MESSAGE_3": "I am good, thanks! How about you?",
+  "MESSAGE_4": "I’m doing well. Thanks for asking!",
+  "MESSAGE_5": "What are you up to today?",
+  "MESSAGE_6": "Just working on some projects.",
+  "MESSAGE_7": "Sounds interesting!",
+  "MESSAGE_8": "Yeah, it’s been a productive day."
+}

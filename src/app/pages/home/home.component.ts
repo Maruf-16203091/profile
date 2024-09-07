@@ -9,14 +9,14 @@ export class HomeComponent implements OnInit, AfterViewChecked {
   @ViewChild('chatContainer') private chatContainer: ElementRef | undefined;
 
   messages = [
-    { text: 'Hi there!', sent: true, delay: 1 },
-    { text: 'Hello! How are you?', sent: false, delay: 2 },
-    { text: 'I am good, thanks! How about you?', sent: true, delay: 3 },
-    { text: 'I’m doing well. Thanks for asking!', sent: false, delay: 4 },
-    { text: 'What are you up to today?', sent: true, delay: 5 },
-    { text: 'Just working on some projects.', sent: false, delay: 6 },
-    { text: 'Sounds interesting!', sent: true, delay: 7 },
-    { text: 'Yeah, it’s been a productive day.', sent: false, delay: 8 }
+    { text: 'MESSAGE_1', sent: true, delay: 1 },
+    { text: 'MESSAGE_2', sent: false, delay: 2 },
+    { text: 'MESSAGE_3', sent: true, delay: 3 },
+    { text: 'MESSAGE_4', sent: false, delay: 4 },
+    { text: 'MESSAGE_5', sent: true, delay: 5 },
+    { text: 'MESSAGE_6', sent: false, delay: 6 },
+    { text: 'MESSAGE_7', sent: true, delay: 7 },
+    { text: 'MESSAGE_8', sent: false, delay: 8 }
   ];
 
   constructor() {}
