@@ -1,56 +1,64 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #sidenav class="sidenav" mode="side" opened>
     <div class="profile">
-      <img src="../assets/profile.jpg" alt="Profile Picture">
+      <img src="../assets/profile.jpg" alt="Profile Picture" />
     </div>
 
     <mat-nav-list>
       <a mat-list-item routerLink="/" routerLinkActive="active">
         <mat-icon>home</mat-icon>
-        <span>{{ 'HOME' | translate }}</span>
+        <span class="side-item">{{ "HOME" | translate }}</span>
       </a>
       <a mat-list-item routerLink="/about" routerLinkActive="active">
         <mat-icon>info</mat-icon>
-        <span>{{ 'ABOUT' | translate }}</span>
+        <span class="side-item">{{ "ABOUT" | translate }}</span>
       </a>
       <a mat-list-item routerLink="/projects" routerLinkActive="active">
         <mat-icon>folder</mat-icon>
-        <span>{{ 'PROJECTS' | translate }}</span>
+        <span class="side-item">{{ "PROJECTS" | translate }}</span>
       </a>
-      <a mat-list-item routerLink="/contact" routerLinkActive="active">
-        <mat-icon>contacts</mat-icon>
-        <span>{{ 'CONTACT' | translate }}</span>
-      </a>
-
-      <!-- Language Selection Buttons -->
-      <div class="language-selector">
-        <button mat-button (click)="setLanguage('en')">EN</button>
-        <button mat-button (click)="setLanguage('de')">DE</button>
-      </div>
     </mat-nav-list>
 
-    <h1 class="follow-me" [ngClass]="bounceClass">Follow Me !</h1>
+   <!-- Social Media Icons -->
+<div class="social-media">
+  <div class="social-row">
+    <a href="https://www.linkedin.com" target="_blank">
+      <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
+    </a>
+    <a href="https://www.github.com" target="_blank">
+      <fa-icon [icon]="['fab', 'github']"></fa-icon>
+    </a>
+  </div>
+  <div class="social-row">
+    <a href="https://www.instagram.com" target="_blank">
+      <fa-icon [icon]="['fab', 'instagram']"></fa-icon>
+    </a>
+    <a href="https://www.twitter.com" target="_blank">
+      <fa-icon [icon]="['fab', 'twitter']"></fa-icon>
+    </a>
+  </div>
+</div>
 
-    <!-- Social Media Icons -->
-    <div class="social-media">
-      <div class="social-row">
-        <a href="https://www.facebook.com" target="_blank">
-          <fa-icon [icon]="['fab', 'facebook']"></fa-icon>
-        </a>
-        <a href="https://www.twitter.com" target="_blank">
-          <fa-icon [icon]="['fab', 'twitter']"></fa-icon>
-        </a>
-      </div>
-      <div class="social-row">
-        <a href="https://www.instagram.com" target="_blank">
-          <fa-icon [icon]="['fab', 'instagram']"></fa-icon>
-        </a>
-        <a href="https://www.linkedin.com" target="_blank">
-          <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
-        </a>
-      </div>
-    </div>
 
+    <h1 class="follow-me" [ngClass]="bounceClass">{{ "FOLLOW_ME" | translate }}</h1> 
+
+    <!-- Language Selector at the top right -->
+ 
+ <div class="language-selector">
+  <span 
+    class="language-toggle" 
+    [ngClass]="{'active-lang': currentLanguage === 'EN'}" 
+    (click)="toggleLanguage()">
+    EN
+  </span>
+  <span class="lang-separator">/</span> 
+  <span 
+    class="language-toggle" 
+    [ngClass]="{'active-lang': currentLanguage === 'DE'}" 
+    (click)="toggleLanguage()">
+    DE
+  </span>
+</div>  
   </mat-sidenav>
 
   <mat-sidenav-content>

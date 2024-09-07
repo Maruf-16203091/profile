@@ -21,7 +21,7 @@ import { AppRoutingModule } from './app-routing.module';
 // FontAwesome imports
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 // Translation loader factory function
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -61,6 +61,6 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
 export class AppModule {
   // Configure the FontAwesome library in the constructor
   constructor(library: FaIconLibrary) {
-    library.addIcons(faFacebook, faTwitter, faInstagram, faLinkedin);
+    library.addIcons(faGithub, faTwitter, faInstagram, faLinkedin);
   }
 }

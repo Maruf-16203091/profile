@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit, AfterViewChecked {
   constructor() {}
 
   ngOnInit(): void {
-    // Optional: any initialization code
+    // Initialization code if needed
   }
 
   ngAfterViewChecked(): void {
@@ -33,7 +33,9 @@ export class HomeComponent implements OnInit, AfterViewChecked {
     if (this.chatContainer) {
       try {
         this.chatContainer.nativeElement.scrollTop = this.chatContainer.nativeElement.scrollHeight;
-      } catch (err) {}
+      } catch (err) {
+        console.error('Error scrolling to bottom:', err);
+      }
     }
   }
 }

@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: flex-end;
     padding: 40px;
-    padding-top: 20px;
+    padding-top: 10px;
     background: url('../../../assets/bg-6.jpg') no-repeat center center fixed;
     background-size: cover;
     overflow-y: auto;
@@ -17,7 +17,7 @@
     align-items: center; /* Center vertically */
     margin-bottom: 20px;
     padding: 10px;
-    border-radius: 12px;
+    border-radius: 20px;
     max-width: 80%;
     position: relative; /* Required for absolute positioning of the profile image */
     animation: fadeInUp 0.5s ease-in-out;
@@ -31,7 +31,7 @@
     align-self: flex-end; /* Aligns the message to the end (right) */
     border-bottom-right-radius: 0;
     margin-right: 25px;
-    padding-left: 60px; /* Space for the profile image and padding */
+    padding-left: 20px; /* Space for the profile image and padding */
     flex-direction: row-reverse; /* Profile image on the right, message on the left */
   }
   
@@ -41,7 +41,7 @@
     align-self: flex-start; /* Aligns the message to the start (left) */
     border-bottom-left-radius: 0;
     margin-left: 25px;
-    padding-right: 60px; /* Space for the profile image and padding */
+    padding-right: 20px; /* Space for the profile image and padding */
     flex-direction: row; /* Profile image on the left, message on the right */
   }
   
@@ -82,14 +82,68 @@
     font-size: 28px;
   }
   
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+/* Bounce animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
   }
-  
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* FadeIn animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Bounce class */
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+/* FadeIn class with optional delays */
+.fadeIn {
+  animation: fadeIn 2s ease-in;
+}
+
+.fadeIn-delay-1s {
+  animation: fadeIn 2s ease-in 1s;
+}
+
+.fadeIn-delay-2s {
+  animation: fadeIn 2s ease-in 2s;
+}
+
+.fadeIn-delay-3s {
+  animation: fadeIn 2s ease-in 3s;
+}
+
+.fadeIn-delay-4s {
+  animation: fadeIn 2s ease-in 4s;
+}
+
+/* Example styling for messages */
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+
+.sent {
+  background-color: #e0f7fa;
+}
+
+.received {
+  background-color: #fce4ec;
+}
+
