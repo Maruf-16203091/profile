@@ -1,6 +1,5 @@
 .sidenav-container {
   height: 100%;
-  
 }
 
 .sidenav {
@@ -31,15 +30,15 @@
 }
 
 .language-selector button {
-  background-color: #3f51b5;
+  background-color: #778bf7;
   color: white;
   width: 45%;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
 .language-selector button:hover {
-  background-color: #6775d3;
+  background-color: #364cda;
 }
 
 mat-nav-list a {
@@ -61,20 +60,24 @@ mat-icon {
 }
 
 .social-media {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
+  width: 80%;
   margin-top: auto;
-  padding: 10px 0;
   margin-left: 10px;
 }
 
-.social-media a {
+.social-media .social-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.social-media .social-row a {
   color: #3f51b5;
   font-size: 24px;
   text-decoration: none;
 }
 
-.social-media a:hover {
+.social-media .social-row a:hover {
   color: #303f9f;
 }

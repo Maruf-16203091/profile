@@ -2,7 +2,7 @@
     <div *ngFor="let msg of messages" class="message"
          [ngClass]="{'sent': msg.sent, 'received': !msg.sent, 'animate__animated': true, 'animate__fadeIn': true, 'animate__delay-1s': msg.delay === 1, 'animate__delay-2s': msg.delay === 2, 'animate__delay-3s': msg.delay === 3, 'animate__delay-4s': msg.delay === 4}">
       <div class="profile">
-        <img [src]="msg.sent ? '../../../assets/profile.jpg' : '../../../assets/profile-1.jpg'" alt="Profile Picture">
+        <img [src]="msg.sent ? '../../../assets/profile-2.webp' : '../../../assets/profile.jpg'" alt="Profile Picture">
       </div>
       <div class="message-content">
         <div class="message-text">
