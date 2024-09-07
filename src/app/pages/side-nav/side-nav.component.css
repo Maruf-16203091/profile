@@ -1,3 +1,14 @@
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css";
+
+.follow-me {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1a0b02; 
+  text-align: center;
+  margin-top: 20px;
+  margin-left: -30px;
+}
 .sidenav-container {
   height: 100%;
 }
@@ -62,14 +73,14 @@ mat-icon {
 .social-media {
   width: 80%;
   margin-top: auto;
-  margin-left: 10px;
+  margin-left: 40px;
 }
 
 .social-media .social-row {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  margin-bottom: 10px;
+  width: 60%;
+  margin-bottom: 30px;
 }
 
 .social-media .social-row a {
