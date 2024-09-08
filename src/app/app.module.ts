@@ -39,8 +39,8 @@ import {
   faNpm,
   faSass,
   faBootstrap
-  
-  
+
+
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faDatabase,
@@ -49,9 +49,9 @@ import {
   faFilm,
   faBook,
   faCamera,
-  faMusic,faPhone,
+  faPhone,
   faEnvelope,
-   faMapMarkerAlt,
+  faMapMarkerAlt,
 } from '@fortawesome/free-solid-svg-icons';
 
 // Translation loader factory function
@@ -107,12 +107,12 @@ export class AppModule {
       faGit,
       faMicrosoft,
       faAws,
-      faDatabase, 
-      faUtensils, 
-      faPlane, 
-      faFilm, 
-      faCamera, 
-      faNpm,faSass,faPhone, faEnvelope, faMapMarkerAlt, faBootstrap,
+      faDatabase,
+      faUtensils,
+      faPlane,
+      faFilm,
+      faCamera,
+      faNpm, faSass, faPhone, faEnvelope, faMapMarkerAlt, faBootstrap,
     );
   }
 }
