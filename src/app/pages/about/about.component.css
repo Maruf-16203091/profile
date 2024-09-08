@@ -92,7 +92,7 @@ p {
 .skills-icons fa-icon,
 .skills-icons mat-icon {
     font-size: 50px;
-    color: black;
+    color: #4e9ef4;
     /* Change this color as per your theme */
     transition: transform 0.3s, color 0.3s;
     cursor: pointer;
@@ -101,7 +101,7 @@ p {
 .skills-icons fa-icon:hover,
 .skills-icons mat-icon:hover {
     transform: scale(1.2);
-    color: #4e9ef4;
+    color: #124378;
     /* Change the hover color as needed */
 }
 
@@ -224,14 +224,14 @@ p {
 
 .hobbies-icons fa-icon {
     font-size: 50px;
-    color: black;
+    color: #4e9ef4;
     transition: transform 0.3s, color 0.3s;
     cursor: pointer;
 }
 
 .hobbies-icons fa-icon:hover {
     transform: scale(1.2);
-    color: #4e9ef4;
+    color: #124378; 
     /* Change the hover color as needed */
 }
 
