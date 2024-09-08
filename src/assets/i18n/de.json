@@ -1,18 +1,19 @@
 {
-    "HOME": "Startseite",
-    "ABOUT": "Über",
-    "PROJECTS": "Projekte",
-    "CONTACT": "Kontakt",
-    "FOLLOW_ME": "folge mir!",
-    "LANGUAGE_SELECTION": "Sprache auswählen",
-    "SOCIAL_MEDIA": "Folge uns auf Social Media",
-    "MESSAGE_1": "Hallo!",
-    "MESSAGE_2": "Hallo! Wie geht es dir?",
-    "MESSAGE_3": "Mir geht's gut, danke! Und dir?",
-    "MESSAGE_4": "Mir geht es gut. Danke der Nachfrage!",
-    "MESSAGE_5": "Was machst du heute?",
-    "MESSAGE_6": "Ich arbeite nur an einigen Projekten.",
-    "MESSAGE_7": "Klingt interessant!",
-    "MESSAGE_8": "Ja, es war ein produktiver Tag."
-  }
-  
+  "HOME": "Startseite",
+  "ABOUT": "Über",
+  "PROJECTS": "Projekte",
+  "CONTACT": "Kontakt",
+  "FOLLOW_ME": "folge mir!",
+  "LANGUAGE_SELECTION": "Sprache auswählen",
+  "SOCIAL_MEDIA": "Folge uns auf Social Media",
+  "MESSAGE_1": "Hallo!",
+  "MESSAGE_2": "Hallo! Wie geht es dir?",
+  "MESSAGE_3": "Mir geht es gut, danke! Ich habe eine Stelle als Full-Stack-Entwickler zu vergeben. Kannst du mir ein wenig über dich erzählen?",
+  "MESSAGE_4": "Natürlich! Ich bin MD Maruf Hosen, ein Full-Stack-Webentwickler. Ich spezialisiere mich auf PHP und Angular.",
+  "MESSAGE_5": "Das klingt großartig! An was arbeitest du gerade?",
+  "MESSAGE_6": "Zurzeit mache ich ein Praktikum bei Bosch Rexroth in Ulm als Full-Stack-Entwickler, mit Schwerpunkt auf Angular und PHP.",
+  "MESSAGE_7": "Das klingt interessant! Hast du noch weitere Berufserfahrungen?",
+  "MESSAGE_8": "Ja, ich habe zusätzliche Erfahrung in der Webentwicklung. Für weitere Details zu meinem Hintergrund und meinen Fähigkeiten empfehle ich, meinen 'Über'-Bereich anzusehen.",
+  "MESSAGE_9": "Perfekt! Ich werde mir das ansehen. Vielen Dank für die Informationen!",
+  "MESSAGE_10": "Gern geschehen! Ich freue mich darauf, von dir zu hören."
+}

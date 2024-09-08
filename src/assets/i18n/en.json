@@ -8,10 +8,12 @@
   "SOCIAL_MEDIA": "Follow us on social media",
   "MESSAGE_1": "Hi there!",
   "MESSAGE_2": "Hello! How are you?",
-  "MESSAGE_3": "I am good, thanks! How about you?",
-  "MESSAGE_4": "I’m doing well. Thanks for asking!",
-  "MESSAGE_5": "What are you up to today?",
-  "MESSAGE_6": "Just working on some projects.",
-  "MESSAGE_7": "Sounds interesting!",
-  "MESSAGE_8": "Yeah, it’s been a productive day."
+  "MESSAGE_3": "I’m good, thanks! I have a full stack job opportunity. Can you tell me a bit about yourself?",
+  "MESSAGE_4": "Sure! I’m MD Maruf Hosen, a Full Stack Web Developer. I specialize in PHP and Angular.",
+  "MESSAGE_5": "That’s great! What are you currently working on?",
+  "MESSAGE_6": "Right now, I’m doing an internship at Bosch Rexroth in Ulm as a Full Stack Developer, focusing on Angular and PHP.",
+  "MESSAGE_7": "Sounds interesting! Do you have more job experience?",
+  "MESSAGE_8": "Yes, I have additional experience in web development. For more details about my background and skills, I would recommend checking out my 'About' section.",
+  "MESSAGE_9": "Perfect! I’ll take a look there. Thank you for the information!",
+  "MESSAGE_10": "You’re welcome! Looking forward to hearing back from you."
 }

@@ -15,7 +15,7 @@
 }
 
 .language-toggle.active-lang {
-  color: rgb(52, 52, 203);
+  color: #4e9ef4;
   font-weight: bolder;
 }
 
@@ -31,7 +31,7 @@
   font-size: 26px;
   font-weight: bold;
   font-style: oblique;
-  color: rgb(52, 52, 203);
+  color: #4e9ef4;
   text-align: center;
   margin-left: -50px;
 }
@@ -58,13 +58,11 @@
   font-weight: bold;
 }
 
-.side-item :hover {
-  color: blue;
-}
+
 
 .profile {
   align-self: center;
-  margin-top: 20px; /* Space below the language selector */
+  margin-top: 20px;
 }
 .profile img {
   border-radius: 20%;
@@ -104,10 +102,11 @@ mat-nav-list a {
   transition: color 0.3s;
 }
 
-mat-nav-list a:hover {
-  animation: bounceHover 0.5s;
-  color: rgb(15, 15, 235);
+mat-nav-list a.active, 
+mat-nav-list a.mat-list-item-active {
+  color: #ffffff !important; /* White text color for contrast */
 }
+
 
 mat-icon {
   margin-right: 10px;
@@ -147,7 +146,7 @@ mat-icon {
 }
 
 .social-media .social-row a:hover {
-  color: rgb(15, 15, 235); /* Change color on hover */
+  color: #4e9ef4; /* Change color on hover */
   animation: easeOutHover 0.3s forwards; /* Apply the ease-out animation on hover */
 }
 
@@ -157,7 +156,7 @@ mat-icon {
 }
 
 .social-media .social-row fa-icon:hover {
-  color: blue; 
+  color: #4e9ef4; 
   transition: color 0.3s ease;
 }
 
