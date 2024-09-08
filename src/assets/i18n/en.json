@@ -1,8 +1,8 @@
 {
-  "HOME": "Home",
-  "ABOUT": "About",
-  "PROJECTS": "Projects",
-  "CONTACT": "Contact",
+  "HOME": "home",
+  "ABOUT": "about",
+  "PROJECTS": "projects",
+  "CONTACT": "contact",
   "FOLLOW_ME": "follow me!",
   "RESUME_DOWNLOAD": "Download Resume",
   "LANGUAGE_SELECTION": "Select Language",
