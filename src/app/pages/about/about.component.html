@@ -1,92 +1,97 @@
 <div class="about-container">
-    
-   
-    <section class="profile-section">
-        <div class="profile-content">
-          <div class="contact-details">
-            <h4>Contact Details</h4>
-            <p>
-              <fa-icon [icon]="['fas', 'phone']" class="contact-icon"></fa-icon>
-              <a href="tel:+4915752932859" class="contact-link">+49 1575 2932859</a>
-            </p>
-            <p>
-              <fa-icon [icon]="['fas', 'envelope']" class="contact-icon"></fa-icon>
-              <a href="mailto:hosen.maruf711@gmail.com" class="contact-link">hosen.maruf711&#64;gmail.com</a>
-            </p>
-            <p>
-              <fa-icon [icon]="['fas', 'map-marker-alt']" class="contact-icon"></fa-icon>
-             Heidenheimer Str. 82, 89075 Ulm
-            </p>
-          </div>
-        </div>
-      </section>
-      
-      
-      <!--resume download button-->
+  <section class="profile-section">
+    <div class="profile-content">
+      <div class="contact-details">
+        <h4>Contact Details</h4>
+        <p>
+          <fa-icon [icon]="['fas', 'phone']" class="contact-icon"></fa-icon>
+          <a href="tel:+4915752932859" class="contact-link">+49 1575 2932859</a>
+        </p>
+        <p>
+          <fa-icon [icon]="['fas', 'envelope']" class="contact-icon"></fa-icon>
+          <a href="mailto:hosen.maruf711@gmail.com" class="contact-link"
+            >hosen.maruf711&#64;gmail.com</a
+          >
+        </p>
+        <p>
+          <fa-icon
+            [icon]="['fas', 'map-marker-alt']"
+            class="contact-icon"
+          ></fa-icon>
+          Heidenheimer Str. 82, 89075 Ulm
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!--resume download button-->
   <a href="../../../assets/Profile.pdf" class="download-resume" download>
     <i class="fas fa-download"></i> {{ "RESUME_DOWNLOAD" | translate }}
   </a>
-   
-    <!-- Skills Section -->
-    <div class="skills-container">
-      <h2>Skills</h2>
-      <div class="skills-icons">
-        <!-- FontAwesome Icons -->
-        <fa-icon [icon]="['fab', 'html5']" title="HTML5"></fa-icon>
-        <fa-icon [icon]="['fab', 'css3-alt']" title="CSS3"></fa-icon>
-        <fa-icon [icon]="['fab', 'bootstrap']" title="Bootstrap"></fa-icon>
-        <fa-icon [icon]="['fab', 'js']" title="JavaScript"></fa-icon>
-        <fa-icon [icon]="['fab', 'angular']" title="Angular"></fa-icon>
-        <fa-icon [icon]="['fab', 'react']" title="React"></fa-icon>
-        <fa-icon [icon]="['fab', 'node']" title="Node.js"></fa-icon>
-        <fa-icon [icon]="['fab', 'php']" title="PHP"></fa-icon>
-        <fa-icon [icon]="['fas', 'database']" title="MySQL"></fa-icon>
-        <fa-icon [icon]="['fab', 'git']" title="Git"></fa-icon>
-        <fa-icon [icon]="['fab', 'sass']" title="Sass"></fa-icon>
-        <fa-icon [icon]="['fab', 'npm']" title="npm"></fa-icon>
-      </div>
-    </div>
-  
-    <!-- Experience Section -->
-    <section class="experience-section" *ngIf="jobs.length">
-      <h2>Experience</h2>
-      <div *ngFor="let job of jobs" class="experience-item" [@fadeIn]>
-        <img [src]="job.logo" alt="{{ job.company }} Logo" class="company-logo" />
-        <div class="experience-details">
-          <h3>{{ job.title }} at {{ job.company }}</h3>
-          <p>
-            <strong>{{ job.type }}</strong> · {{ job.duration }}
-          </p>
-          <p>{{ job.description }}</p>
-        </div>
-      </div>
-    </section>
-  
-    <!-- Education Section -->
-    <section class="education-section">
-      <h2>Education</h2>
-      <div *ngFor="let edu of educationList" class="education-item" [@fadeIn]>
-        <img [src]="edu.logo" alt="{{ edu.institution }} Logo" class="institution-logo" />
-        <div class="education-details">
-          <h3>{{ edu.degree }} in {{ edu.field }}</h3>
-          <p>
-            <strong>{{ edu.institution }}</strong> · {{ edu.duration }}
-          </p>
-          <p>{{ edu.description }}</p>
-        </div>
-      </div>
-    </section>
-  
-    <!-- Hobbies Section -->
-    <div class="about-hobbies-container">
-      <h2>Hobbies</h2>
-      <div class="hobbies-icons">
-        <!-- FontAwesome Icons for Hobbies -->
-        <fa-icon [icon]="['fas', 'utensils']" title="Cooking"></fa-icon>
-        <fa-icon [icon]="['fas', 'plane']" title="Travelling"></fa-icon>
-        <fa-icon [icon]="['fas', 'film']" title="Movies"></fa-icon>
-        <fa-icon [icon]="['fas', 'camera']" title="Photography"></fa-icon>
-      </div>
+
+  <!-- Skills Section -->
+  <div class="skills-container">
+    <h2>Skills</h2>
+    <div class="skills-icons">
+      <!-- FontAwesome Icons -->
+      <fa-icon [icon]="['fab', 'html5']" title="HTML5"></fa-icon>
+      <fa-icon [icon]="['fab', 'css3-alt']" title="CSS3"></fa-icon>
+      <fa-icon [icon]="['fab', 'bootstrap']" title="Bootstrap"></fa-icon>
+      <fa-icon [icon]="['fab', 'js']" title="JavaScript"></fa-icon>
+      <fa-icon [icon]="['fab', 'angular']" title="Angular"></fa-icon>
+      <fa-icon [icon]="['fab', 'react']" title="React"></fa-icon>
+      <fa-icon [icon]="['fab', 'node']" title="Node.js"></fa-icon>
+      <fa-icon [icon]="['fab', 'php']" title="PHP"></fa-icon>
+      <fa-icon [icon]="['fas', 'database']" title="MySQL"></fa-icon>
+      <fa-icon [icon]="['fab', 'git']" title="Git"></fa-icon>
+      <fa-icon [icon]="['fab', 'sass']" title="Sass"></fa-icon>
+      <fa-icon [icon]="['fab', 'npm']" title="npm"></fa-icon>
     </div>
   </div>
-  
+
+  <!-- Experience Section -->
+  <section class="experience-section" *ngIf="jobs.length">
+    <h2>Experience</h2>
+    <div *ngFor="let job of jobs" class="experience-item" [@fadeIn]>
+      <img [src]="job.logo" alt="{{ job.company }} Logo" class="company-logo" />
+      <div class="experience-details">
+        <h3>{{ job.title }} at {{ job.company }}</h3>
+        <p>
+          <strong>{{ job.type }}</strong> · {{ job.duration }}
+        </p>
+        <p>{{ job.description }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="education-section">
+    <h2>Education</h2>
+    <div *ngFor="let edu of educationList" class="education-item" [@fadeIn]>
+      <img
+        [src]="edu.logo"
+        alt="{{ edu.institution }} Logo"
+        class="institution-logo"
+      />
+      <div class="education-details">
+        <h3>{{ edu.degree }} in {{ edu.field }}</h3>
+        <p>
+          <strong>{{ edu.institution }}</strong> · {{ edu.duration }}
+        </p>
+        <p>{{ edu.description }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hobbies Section -->
+  <div class="about-hobbies-container">
+    <h2>Hobbies</h2>
+    <div class="hobbies-icons">
+      <!-- FontAwesome Icons for Hobbies -->
+      <fa-icon [icon]="['fas', 'utensils']" title="Cooking"></fa-icon>
+      <fa-icon [icon]="['fas', 'plane']" title="Travelling"></fa-icon>
+      <fa-icon [icon]="['fas', 'film']" title="Movies"></fa-icon>
+      <fa-icon [icon]="['fas', 'camera']" title="Photography"></fa-icon>
+    </div>
+  </div>
+</div>

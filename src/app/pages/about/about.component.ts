@@ -78,9 +78,9 @@ export class AboutComponent implements OnInit {
     // Add other education details here...
   ];
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit(): void {
-    
+
   }
 }
