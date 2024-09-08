@@ -21,7 +21,38 @@ import { AppRoutingModule } from './app-routing.module';
 // FontAwesome imports
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faGithub, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import {
+  faGithub,
+  faTwitter,
+  faInstagram,
+  faLinkedin,
+  faHtml5,
+  faCss3Alt,
+  faJs,
+  faAngular,
+  faReact,
+  faNode,
+  faPhp,
+  faGit,
+  faMicrosoft,
+  faAws,
+  faNpm,
+  faSass,
+  faBootstrap
+  
+  
+} from '@fortawesome/free-brands-svg-icons';
+import {
+  faDatabase,
+  faUtensils,
+  faPlane,
+  faFilm,
+  faBook,
+  faCamera,
+  faMusic,faPhone,
+  faEnvelope,
+   faMapMarkerAlt,
+} from '@fortawesome/free-solid-svg-icons';
 
 // Translation loader factory function
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -35,7 +66,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     AboutComponent,
     ProjectsComponent,
     ContactComponent,
-    SideNavComponent
+    SideNavComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,18 +80,39 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
+        deps: [HttpClient],
+      },
     }),
     AppRoutingModule,
-    FontAwesomeModule // Add FontAwesomeModule here
+    FontAwesomeModule, // Add FontAwesomeModule here
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {
   // Configure the FontAwesome library in the constructor
   constructor(library: FaIconLibrary) {
-    library.addIcons(faGithub, faTwitter, faInstagram, faLinkedin);
+    library.addIcons(
+      faGithub,
+      faTwitter,
+      faInstagram,
+      faLinkedin,
+      faHtml5,
+      faCss3Alt,
+      faJs,
+      faAngular,
+      faReact,
+      faNode,
+      faPhp,
+      faGit,
+      faMicrosoft,
+      faAws,
+      faDatabase, 
+      faUtensils, 
+      faPlane, 
+      faFilm, 
+      faCamera, 
+      faNpm,faSass,faPhone, faEnvelope, faMapMarkerAlt, faBootstrap,
+    );
   }
 }

@@ -4,37 +4,128 @@
     padding: 20px;
   }
   
+  
+  
   .profile-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
+    padding: 15px;
+    background-color: #f9f9f9;
   }
   
   .profile-content {
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .profile-image {
-    width: 120px;
-    height: 120px;
-    border-radius: 20%;
-    margin-right: 20px;
+    max-width: 300px;
+    height: 180px;
+    margin-left: -20px;
+    
   }
   
   .contact-details {
-    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0.3, 0.1, 0.1, 0.5);
   }
   
+  .contact-details h2 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .contact-details p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-icon {
+    margin-right: 10px;
+    color: black;
+  }
+  
+  .contact-link {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .contact-link:hover {
+    color: #0056b3;
+  }
+  
+  
+  
   h1, h2 {
-    color: #4e9ef4;
+    color: black;
   }
   
   p {
     text-align: justify;
   }
+  
+  .about-skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+  }
+  
+
+  
+
+  .skills-container {
+    
+    text-align: left;
+  }
+  
+  .skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 30px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+  
+  .skills-icons fa-icon, 
+  .skills-icons mat-icon {
+    font-size: 50px;
+    color: black; /* Change this color as per your theme */
+    transition: transform 0.3s, color 0.3s;
+    cursor: pointer;
+  }
+  
+  .skills-icons fa-icon:hover, 
+  .skills-icons mat-icon:hover {
+    transform: scale(1.2);
+    color: #4e9ef4; /* Change the hover color as needed */
+  }
+  
+  .skills-icons fa-icon[title], 
+  .skills-icons mat-icon[aria-label] {
+    position: relative;
+  }
+  
+  .skills-icons fa-icon[title]::after, 
+  .skills-icons mat-icon[aria-label]::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #4e9ef4;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .skills-icons fa-icon:hover::after, 
+  .skills-icons mat-icon:hover::after {
+    opacity: 1;
+  }
+  
+
   
   .experience-item, .education-item {
     display: flex;
@@ -72,3 +163,82 @@
     text-align: justify;
   }
   
+  /* Download Resume Button */
+  
+.download-resume {
+    position: fixed;
+    top: 42px;
+    right: 35px;
+    background-color: #4e9ef4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 9999;
+  }
+  
+  .download-resume i {
+    margin-right: 8px; /* Space between the icon and text */
+    font-size: 18px; /* Adjust the size of the icon */
+  }
+  
+  .download-resume:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+
+  .about-hobbies-container {
+
+  text-align: left;
+}
+
+.about-hobbies-container h2 {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.hobbies-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 30px;
+  padding: 15px 0;
+  margin-bottom: 60px;
+}
+
+.hobbies-icons fa-icon {
+  font-size: 50px;
+  color: black; 
+  transition: transform 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.hobbies-icons fa-icon:hover {
+  transform: scale(1.2);
+  color: #4e9ef4; /* Change the hover color as needed */
+}
+
+.hobbies-icons fa-icon[title] {
+  position: relative;
+}
+
+.hobbies-icons fa-icon[title]::after {
+  content: attr(title);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #4e9ef4;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.hobbies-icons fa-icon:hover::after {
+  opacity: 1;
+}
