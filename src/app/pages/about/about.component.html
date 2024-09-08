@@ -1,1 +1,67 @@
-<p>about works!</p>
+<div class="about-container">
+    <section class="profile-section">
+      <div class="profile-content">
+        <div class="contact-details">
+          <h2>Contact Details</h2>
+          <p><strong>Phone:</strong> +4915752932859</p>
+          <p><strong>Email:</strong> hosen.maruf711&#64;gmail.com</p>
+          <p><strong>Address:</strong> Heidenheimer Str. 82, 89075 Ulm</p>
+        </div>
+      </div>
+    </section>
+  
+    <h1>About Me</h1>
+    <p>
+      I'm MD Maruf Hosen, a dedicated Full Stack Web Developer with a robust skill
+      set in PHP and Angular. My academic journey led me to complete a Master's
+      degree in Web Engineering at Technische Universität Chemnitz, where I gained
+      comprehensive knowledge and hands-on experience in advanced web
+      technologies. I have accumulated over two years of professional experience
+      in various development roles, enhancing my skills and contributing to
+      diverse projects. Currently, I am interning at Bosch Rexroth in Ulm, where I
+      work with a variety of technologies including PHP, Angular, and MySQL. This
+      role allows me to contribute to innovative projects and refine my skills
+      further. My previous experiences include working as a Software Developer at
+      Liebelei Liköre, where I focused on digitalizing web shop capabilities and
+      improving IT infrastructure. Additionally, I have freelanced as a Laravel
+      Developer, working on various client projects, and interned at SST Tech
+      Ltd., where I contributed to live projects such as eCommerce and HRM
+      systems. With a passion for web development and a strong foundation in both
+      front-end and back-end technologies, I am committed to delivering
+      high-quality solutions and continuously expanding my expertise in the
+      dynamic field of software development.
+    </p>
+  
+    <section class="experience-section">
+      <h2>Experience</h2>
+      <div *ngFor="let job of jobs" class="experience-item" [@fadeIn]>
+        <img [src]="job.logo" alt="{{ job.company }} Logo" class="company-logo" />
+        <div class="experience-details">
+          <h3>{{ job.title }} at {{ job.company }}</h3>
+          <p>
+            <strong>{{ job.type }}</strong> · {{ job.duration }}
+          </p>
+          <p>{{ job.description }}</p>
+        </div>
+      </div>
+    </section>
+  
+    <section class="education-section">
+      <h2>Education</h2>
+      <div *ngFor="let edu of educationList" class="education-item" [@fadeIn]>
+        <img
+          [src]="edu.logo"
+          alt="{{ edu.institution }} Logo"
+          class="institution-logo"
+        />
+        <div class="education-details">
+          <h3>{{ edu.degree }} in {{ edu.field }}</h3>
+          <p>
+            <strong>{{ edu.institution }}</strong> · {{ edu.duration }}
+          </p>
+          <p>{{ edu.description }}</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  
