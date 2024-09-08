@@ -4,6 +4,7 @@
   "PROJECTS": "Projekte",
   "CONTACT": "Kontakt",
   "FOLLOW_ME": "folge mir!",
+  "RESUME_DOWNLOAD": "Lebenslauf herunterladen",
   "LANGUAGE_SELECTION": "Sprache auswählen",
   "SOCIAL_MEDIA": "Folge uns auf Social Media",
   "MESSAGE_1": "Hallo!",
@@ -15,3 +16,5 @@
   "MESSAGE_7": "Das klingt interessant! Hast du noch weitere Berufserfahrungen?",
   "MESSAGE_8": "Ja, ich habe zusätzliche Erfahrung in der Webentwicklung. Für weitere Details zu meinem Hintergrund und meinen Fähigkeiten empfehle ich, meinen 'Über'-Bereich anzusehen.",
   "MESSAGE_9": "Perfekt! Ich werde mir das ansehen. Vielen Dank für die Informationen!",
+  "MESSAGE_10": "Gern geschehen! Ich freue mich darauf, von dir zu hören."
+}
