@@ -17,7 +17,12 @@ export class HomeComponent implements OnInit, AfterViewChecked {
     { text: 'MESSAGE_6', sent: false, delay: 6 },
     { text: 'MESSAGE_7', sent: true, delay: 7 },
     { text: 'MESSAGE_8', sent: false, delay: 8 },
-    { text: 'MESSAGE_9', sent: true, delay: 9 }
+    { text: 'MESSAGE_9', sent: true, delay: 9 },
+    { text: 'MESSAGE_10', sent: false, delay: 10 },
+    { text: 'MESSAGE_11', sent: true, delay: 11 },
+    { text: 'MESSAGE_12', sent: false, delay: 12 },
+    { text: 'MESSAGE_13', sent: true, delay: 13 },
+    
   ];
 
   constructor() {}

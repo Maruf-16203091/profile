@@ -21,14 +21,16 @@
 .contact-details {
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 15px;
+    padding: 18px;
+    padding-top: 0;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0.3, 0.1, 0.1, 0.5);
 }
 
-.contact-details h2 {
+.contact-details h4 {
     margin-bottom: 15px;
     color: #333;
+    font-size: 24px;
 }
 
 .contact-details p {
@@ -182,7 +184,7 @@ p {
 .download-resume {
     position: fixed;
     top: 42px;
-    right: 35px;
+    right: 240px;
     background-color: #4e9ef4;
     color: white;
     padding: 10px 20px;

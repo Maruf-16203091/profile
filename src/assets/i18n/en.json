@@ -16,5 +16,11 @@
   "MESSAGE_7": "Sounds interesting! Do you have more job experience?",
   "MESSAGE_8": "Yes, I have additional experience in web development. For more details about my background and skills, I would recommend checking out my 'About' section.",
   "MESSAGE_9": "Perfect! I’ll take a look there. Thank you for the information!",
-  "MESSAGE_10": "You’re welcome! Looking forward to hearing back from you."
+  "MESSAGE_10": "You’re welcome! Looking forward to hearing back from you.",
+  "MESSAGE_11": "Can you tell me more about the technologies you’ve worked with?",
+  "MESSAGE_12": "Of course! I’ve worked extensively with technologies like HTML5, CSS3, JavaScript, Angular, PHP, and MySQL. I’m also proficient in using frameworks like Bootstrap and libraries like React.",
+  "MESSAGE_13": "Impressive! Have you completed any notable projects recently?",
+  "MESSAGE_14": "Yes, I’ve worked on a web application for an eCommerce platform during my time at Fiverr. It involved creating a full-stack solution using Angular and Laravel.",
+  "MESSAGE_15": "That’s excellent experience! Are you open to freelance work, or are you looking for full-time opportunities?",
+  "MESSAGE_16": "I’m open to both freelance and full-time opportunities, depending on the project and the work environment. I enjoy taking on new challenges!"
 }
