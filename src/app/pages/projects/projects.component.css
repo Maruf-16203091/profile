@@ -1,7 +1,7 @@
 .project-grid {
     display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    gap: 20px; /* Space between cards */
     padding: 20px;
   }
   
@@ -11,15 +11,75 @@
   }
   
   .project-card {
-    max-width: 100%;
-    width: 300px;
+    width: 100%;
+    max-width: 350px; /* Limit card width */
+    height: 400px; /* Fixed card height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
   
-  mat-toolbar {
-    margin-bottom: 20px;
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   }
   
-  .mat-toolbar{
+  .image-wrapper {
+    height: 200px; /* Fixed height for image container */
+    overflow: hidden; /* Hide overflowed parts of the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  mat-card-image {
+    width: 100%; /* Full width of container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100%; /* Prevent image from exceeding container height */
+    object-fit: cover; /* Crop image to fill container */
+  }
+  
+  mat-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0; /* Space above and below title */
+  }
+  
+  mat-card-subtitle {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px; /* Space below subtitle */
+  }
+  
+  mat-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    padding: 0 10px; /* Space around content */
+    text-align: center;
+  }
+  
+  mat-card-actions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  mat-card-actions button {
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
     background-color: #4e9ef4;
     color: white;
   }
+  
+  .mat-toolbar {
+    margin-bottom: 20px;
+    background-color: #4e9ef4;
+    color: white;
+  }
+  

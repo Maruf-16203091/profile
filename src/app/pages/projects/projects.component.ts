@@ -7,16 +7,42 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
   projects = [
-    { title: 'Project 1', subtitle: 'Subtitle 1', image: 'https://via.placeholder.com/300', description: 'Description for Project 1' },
-    { title: 'Project 2', subtitle: 'Subtitle 2', image: 'https://via.placeholder.com/300', description: 'Description for Project 2' },
-    { title: 'Project 3', subtitle: 'Subtitle 3', image: 'https://via.placeholder.com/300', description: 'Description for Project 3' },
-    { title: 'Project 2', subtitle: 'Subtitle 2', image: 'https://via.placeholder.com/300', description: 'Description for Project 2' },
-    { title: 'Project 4', subtitle: 'Subtitle 4', image: 'https://via.placeholder.com/300', description: 'Description for Project 4' },
-    { title: 'Project 1', subtitle: 'Subtitle 1', image: 'https://via.placeholder.com/300', description: 'Description for Project 1' },
-    { title: 'Project 2', subtitle: 'Subtitle 2', image: 'https://via.placeholder.com/300', description: 'Description for Project 2' },
-    { title: 'Project 3', subtitle: 'Subtitle 3', image: 'https://via.placeholder.com/300', description: 'Description for Project 3' },
-    { title: 'Project 2', subtitle: 'Subtitle 2', image: 'https://via.placeholder.com/300', description: 'Description for Project 2' },
-    { title: 'Project 4', subtitle: 'Subtitle 4', image: 'https://via.placeholder.com/300', description: 'Description for Project 4' },
+    {
+      title: 'E-Commerce Platform',
+      subtitle: 'Online Shopping Redefined',
+      image: 'assets/project-1.png',
+      description: 'A fully integrated e-commerce platform featuring a modern UI, user-friendly navigation, and secure payment options. Ideal for businesses looking to expand their online presence.'
+    },
+    {
+      title: 'Portfolio Website',
+      subtitle: 'Showcase Your Work',
+      image: 'assets/project-2.png',
+      description: 'A sleek and professional portfolio website designed to showcase individual or business achievements. Includes sections for work samples, testimonials, and contact information.'
+    },
+    {
+      title: 'Social Media Dashboard',
+      subtitle: 'Manage Your Social Media Effortlessly',
+      image: 'assets/project-3.png',
+      description: 'An advanced social media dashboard that allows users to manage multiple accounts, schedule posts, and analyze engagement metrics all in one place.'
+    },
+    {
+      title: 'Real Estate App',
+      subtitle: 'Find Your Dream Home',
+      image: 'assets/project-4.png',
+      description: 'A user-friendly real estate application that offers property listings, virtual tours, and detailed search filters to help users find their ideal home or commercial property.'
+    },
+    {
+      title: 'Fitness Tracker',
+      subtitle: 'Achieve Your Fitness Goals',
+      image: 'assets/project-5.jpg',
+      description: 'A comprehensive fitness tracking application that monitors workouts, tracks progress, and provides personalized fitness plans to help users stay motivated and achieve their health goals.'
+    },
+    {
+      title: 'Travel Booking System',
+      subtitle: 'Plan Your Perfect Trip',
+      image: 'assets/project-6.jpg',
+      description: 'A travel booking system that allows users to search for flights, hotels, and rental cars. Features real-time availability, booking management, and a streamlined user interface for a seamless travel planning experience.'
+    },
     // Add more projects as needed
   ];
 }
