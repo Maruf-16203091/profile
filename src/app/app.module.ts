@@ -8,7 +8,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
+// Component imports
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
@@ -38,9 +42,7 @@ import {
   faAws,
   faNpm,
   faSass,
-  faBootstrap
-
-
+  faBootstrap,
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faDatabase,
@@ -52,6 +54,7 @@ import {
   faPhone,
   faEnvelope,
   faMapMarkerAlt,
+
 } from '@fortawesome/free-solid-svg-icons';
 
 // Translation loader factory function
@@ -75,7 +78,10 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     MatIconModule,
     MatListModule,
     MatToolbarModule,
+    MatButtonModule,
+    MatCardModule,
     HttpClientModule,
+    SlickCarouselModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -84,7 +90,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
       },
     }),
     AppRoutingModule,
-    FontAwesomeModule, // Add FontAwesomeModule here
+    FontAwesomeModule, // Import FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -112,7 +118,12 @@ export class AppModule {
       faPlane,
       faFilm,
       faCamera,
-      faNpm, faSass, faPhone, faEnvelope, faMapMarkerAlt, faBootstrap,
+      faNpm,
+      faSass,
+      faPhone,
+      faEnvelope,
+      faMapMarkerAlt,
+      faBootstrap,
     );
   }
 }

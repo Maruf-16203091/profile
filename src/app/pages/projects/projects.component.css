@@ -1,0 +1,25 @@
+.project-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 20px;
+  }
+  
+  .project-card-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .project-card {
+    max-width: 100%;
+    width: 300px;
+  }
+  
+  mat-toolbar {
+    margin-bottom: 20px;
+  }
+  
+  .mat-toolbar{
+    background-color: #4e9ef4;
+    color: white;
+  }
