@@ -1,23 +1,27 @@
+/* Container for about section */
 .about-container {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
 }
 
-
-
+/* Profile section */
 .profile-section {
     padding: 15px;
     background-color: #f9f9f9;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
 }
 
+/* Profile content */
 .profile-content {
     max-width: 300px;
     height: 180px;
     margin-left: -20px;
-
 }
 
+/* Contact details */
 .contact-details {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -50,7 +54,6 @@
     color: #124378;
 }
 
-
 .contact-link {
     color: #555;
     text-decoration: none;
@@ -61,10 +64,7 @@
     color: #124378;
 }
 
-
-
-h1,
-h2 {
+h1, h2 {
     color: black;
 }
 
@@ -72,18 +72,9 @@ p {
     text-align: justify;
 }
 
-.about-skills-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 60px;
-}
-
-
-
-
+/* Skills section */
 .skills-container {
-
+    margin-top: 170px;
     text-align: left;
 }
 
@@ -96,29 +87,23 @@ p {
     margin-bottom: 20px;
 }
 
-.skills-icons fa-icon,
-.skills-icons mat-icon {
+.skills-icons fa-icon, .skills-icons mat-icon {
     font-size: 50px;
     color: #4e9ef4;
-    /* Change this color as per your theme */
     transition: transform 0.3s, color 0.3s;
     cursor: pointer;
 }
 
-.skills-icons fa-icon:hover,
-.skills-icons mat-icon:hover {
+.skills-icons fa-icon:hover, .skills-icons mat-icon:hover {
     transform: scale(1.2);
     color: #124378;
-    /* Change the hover color as needed */
 }
 
-.skills-icons fa-icon[title],
-.skills-icons mat-icon[aria-label] {
+.skills-icons fa-icon[title], .skills-icons mat-icon[aria-label] {
     position: relative;
 }
 
-.skills-icons fa-icon[title]::after,
-.skills-icons mat-icon[aria-label]::after {
+.skills-icons fa-icon[title]::after, .skills-icons mat-icon[aria-label]::after {
     content: attr(title);
     position: absolute;
     bottom: -20px;
@@ -130,15 +115,12 @@ p {
     transition: opacity 0.3s;
 }
 
-.skills-icons fa-icon:hover::after,
-.skills-icons mat-icon:hover::after {
+.skills-icons fa-icon:hover::after, .skills-icons mat-icon:hover::after {
     opacity: 1;
 }
 
-
-
-.experience-item,
-.education-item {
+/* Experience and Education items */
+.experience-item, .education-item {
     display: flex;
     align-items: center;
     background: #fff;
@@ -149,42 +131,36 @@ p {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.experience-item:hover,
-.education-item:hover {
+.experience-item:hover, .education-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.company-logo,
-.institution-logo {
+.company-logo, .institution-logo {
     width: 50px;
     height: 50px;
     margin-right: 15px;
 }
 
-.experience-details,
-.education-details {
+.experience-details, .education-details {
     flex: 1;
 }
 
-.experience-details h3,
-.education-details h3 {
+.experience-details h3, .education-details h3 {
     margin: 0;
     color: #4e9ef4;
 }
 
-.experience-details p,
-.education-details p {
+.experience-details p, .education-details p {
     margin: 5px 0;
     text-align: justify;
 }
 
 /* Download Resume Button */
-
 .download-resume {
     position: fixed;
-    top: 42px;
-    right: 240px;
+    top: 42px; /* Adjusted for better spacing */
+    right: 37px; 
     background-color: #4e9ef4;
     color: white;
     padding: 10px 20px;
@@ -200,9 +176,7 @@ p {
 
 .download-resume i {
     margin-right: 8px;
-    /* Space between the icon and text */
     font-size: 18px;
-    /* Adjust the size of the icon */
 }
 
 .download-resume:hover {
@@ -210,8 +184,8 @@ p {
     transform: scale(1.05);
 }
 
+/* Hobbies section */
 .about-hobbies-container {
-
     text-align: left;
 }
 
@@ -238,8 +212,7 @@ p {
 
 .hobbies-icons fa-icon:hover {
     transform: scale(1.2);
-    color: #124378; 
-    /* Change the hover color as needed */
+    color: #124378;
 }
 
 .hobbies-icons fa-icon[title] {
@@ -260,4 +233,72 @@ p {
 
 .hobbies-icons fa-icon:hover::after {
     opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .about-container {
+        padding: 15px;
+    }
+    .download-resume {
+        right: 30px; /* Adjust position for medium screens */
+        top: 20px;
+        font-size: 14px; /* Ensure text size is readable */
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-section {
+        position: static;
+        padding: 10px;
+    }
+
+    .profile-content {
+        max-width: 250px;
+        height: 150px;
+        margin-left: 0;
+    }
+
+    .contact-details {
+        padding: 15px;
+    }
+
+    .contact-details h4 {
+        font-size: 20px;
+    }
+
+    .contact-details p {
+        font-size: 14px;
+    }
+
+    .download-resume {
+        right: 20px; /* Adjust position for tablets */
+        top: 15px;
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-skills-container {
+        flex-direction: column;
+    }
+
+    .skills-icons, .hobbies-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company-logo, .institution-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .download-resume {
+        right: 10px; 
+        top: 10px;
+        font-size: 12px;
+        padding: 6px 12px;
+    }
 }
